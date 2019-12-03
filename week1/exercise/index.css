@@ -2,15 +2,30 @@
 .card {
     display: inline-block;
     vertical-align: top;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    overflow: hidden;
     background: #eee;
     margin: 30px;
 }
 
+.image-wrapper{
+    height: 200px;
+    position: relative;
+}
+
 .image-product {
-    width: 100%;
-    background: #ccc;
+    display: inline-block;
+    
+    max-height: 100%;
+    max-width: 100%;
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: 0 auto;
 }
 
 
@@ -21,14 +36,24 @@
 /* список */
 #list:checked + section .card {
     display: block;
-    width: 90%;
+    height: 300px;
+    overflow: hidden;
+    background: #eee;
+    margin: 30px;
 }
 
-#list:checked + section .image-product,
+
 #list:checked + section .name-product,
 #list:checked + section .info-product {
     display: inline-block;
-    width: auto;
     height: 100%;
+    width: auto;
 }
   
+#list:checked + section .image-wrapper {
+    width: 400px;
+    padding: 15px 0;
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+}
