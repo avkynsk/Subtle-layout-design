@@ -5,6 +5,7 @@
     width: 300px;
     overflow: hidden;
     margin: 30px;
+    padding: 5px;
 
     transition-duration: 100ms;
 }
@@ -22,7 +23,7 @@ a:hover {
     font-size: 25px;
     white-space: nowrap;
     overflow: hidden;
-    padding: 5px;
+    padding: 5px 0px 5px;
     text-overflow: ellipsis;
     display: block;
 }
@@ -33,6 +34,12 @@ a:hover {
 
 .name-product {
     margin-top: 5px;
+}
+
+.category {
+    margin-top: -6px;
+    font-size: .8rem;
+    color: gray;
 }
 
 .info-product {
@@ -74,9 +81,9 @@ a:hover {
 #list:checked + section .card {
     display: block;
     height: 300px;
-    width: calc(100% - 200px);
+    width: calc(100% - 400px);
     overflow: hidden;
-    margin: 30px 100px 30px;
+    margin: 30px 200px 30px;
 }
 
 #list:checked + section .card:hover {
