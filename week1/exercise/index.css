@@ -12,13 +12,14 @@
 
 .card:hover {
     box-shadow: 0 0 10px gray;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 a:hover {
     color: red;
 }
 
+/* cat name*/
 .cat-name {
     font-size: 25px;
     white-space: nowrap;
@@ -36,16 +37,130 @@ a:hover {
     margin-top: 5px;
 }
 
+/* category */
 .category {
     margin-top: -6px;
     font-size: .8rem;
     color: gray;
 }
 
+/* rating */
+.rating {
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+}
+
+.rating-group {
+    position: relative;
+
+    width: 10em;
+    height: 2em;
+
+    background-image: url(images/off.png);
+    background-size: 2em auto;
+}
+
+.rating-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    font-size: inherit;
+    margin: 0;
+    background-size: 2em auto;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+}
+
+.rating-star:focus {
+    outline: none;
+}
+
+.rating-star:checked,
+.rating-star:hover {
+    background-image: url(images/on.png);
+}
+
+.rating-star:hover ~ .rating-star {
+    background-image: url(images/off.png);
+}
+
+.rating-star:nth-of-type(1){
+    z-index: 10;
+    width: 1em;
+}
+
+.rating-star:nth-of-type(2){
+    z-index: 9;
+    width: 2em;
+}
+
+.rating-star:nth-of-type(3){
+    z-index: 8;
+    width: 3em;
+}
+
+.rating-star:nth-of-type(4){
+    z-index: 7;
+    width: 4em;
+}
+
+.rating-star:nth-of-type(5){
+    z-index: 6;
+    width: 5em;
+}
+
+.rating-star:nth-of-type(6){
+    z-index: 5;
+    width: 6em;
+}
+
+.rating-star:nth-of-type(7){
+    z-index: 4;
+    width: 7em;
+}
+
+.rating-star:nth-of-type(8){
+    z-index: 3;
+    width: 8em;
+}
+
+.rating-star:nth-of-type(9){
+    z-index: 2;
+    width: 9em;
+}
+
+.rating-star:nth-of-type(10){
+    z-index: 1;
+    width: 10em;
+}
+
+/* price */
+.price-new {
+    display: inline;
+    font-size: 35px;
+    font-weight: bold;
+    color: brown;
+}
+
+.price-old {
+    display: inline;
+    margin-left: 15px;
+    font-size: 25px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* about cat */
 .info-product {
     text-align: justify;
 }
 
+/* photo cat */
 .image-wrapper{
     height: 200px;
     position: relative;
@@ -73,11 +188,13 @@ a:hover {
 }
 
 
+/* список */
 .choice {
     margin: 10px 30px 0;
+    padding: 0;
+    font-size: 20px;
 }
 
-/* список */
 #list:checked + section .card {
     display: block;
     height: 300px;
@@ -94,6 +211,7 @@ a:hover {
 #list:checked + section .info-product {
     display: inline-block;
     width: 30%;
+    vertical-align: top;
 }
 
 #list:checked + section .image-wrapper{
@@ -106,9 +224,6 @@ a:hover {
 }
 
 #list:checked + section .image-product {    
-    height: 100%;
-    max-width: 100%;
-
     margin: auto;
     
     position: absolute;
