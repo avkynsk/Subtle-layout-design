@@ -15,6 +15,15 @@
     transform: scale(1.01);
 }
 
+
+.card:hover .cat-name{
+    color: red;
+}
+
+.card:hover .image-product{
+    opacity: 0.7;
+}
+
 a:hover {
     color: red;
 }
@@ -183,11 +192,6 @@ a:hover {
     transition-duration: 100ms;
 }
 
-.image-product:hover {
-    opacity: .7;
-}
-
-
 /* список */
 .choice {
     margin: 10px 30px 0;
@@ -195,7 +199,7 @@ a:hover {
     font-size: 20px;
 }
 
-#list:checked + section .card {
+#list:checked + article .card {
     display: block;
     height: 300px;
     width: calc(100% - 400px);
@@ -203,18 +207,18 @@ a:hover {
     margin: 30px 200px 30px;
 }
 
-#list:checked + section .card:hover {
+#list:checked + article .card:hover {
     transform: scale(1.03);
 }
 
-#list:checked + section .name-product,
-#list:checked + section .info-product {
+#list:checked + article .name-product,
+#list:checked + article .info-product {
     display: inline-block;
     width: 30%;
     vertical-align: top;
 }
 
-#list:checked + section .image-wrapper{
+#list:checked + article .image-wrapper{
     height: 200px;
     display: inline-block;
     width: 30%;
@@ -223,7 +227,7 @@ a:hover {
     transform: translateY(-50%);
 }
 
-#list:checked + section .image-product {    
+#list:checked + article .image-product {    
     margin: auto;
     
     position: absolute;
