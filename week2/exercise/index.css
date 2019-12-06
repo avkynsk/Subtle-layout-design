@@ -1,0 +1,30 @@
+.gallery {
+    position: relative;
+    top: 50px;
+    margin: auto;
+
+    overflow: hidden;
+    height: 300px;
+    width: 80%;
+}
+
+.card {
+    float: left;
+    
+    height: 300px;
+    width: 25%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.wrapper .vegetable{
+    height: 100%;
+    width: 95%;
+    
+    object-fit: cover;
+    object-position: 0 0;
+}
