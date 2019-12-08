@@ -58,7 +58,7 @@ body {
     height: 100%;
 
     text-align: center;
-    background-color: rgba(50, 50, 50, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-window img{
@@ -67,9 +67,7 @@ body {
     transform: translate(0, -50%);
 
     max-height: 500px;
-    max-width: 100%;
-
-    object-fit: cover;
+    max-width: 80%;
 }
 
 .modal-window:target {
@@ -118,6 +116,7 @@ input[value = "1"]:checked ~ .gallery > section:nth-child(2),
 input[value = "1"]:checked ~ .gallery > section:nth-child(3),
 input[value = "1"]:checked ~ .gallery > section:nth-child(4) {
     display: inline-block;
+    animation: move .3s linear;
 }
 
 input[value = "2"]:checked ~ .gallery > section:nth-child(4),
@@ -125,6 +124,7 @@ input[value = "2"]:checked ~ .gallery > section:nth-child(5),
 input[value = "2"]:checked ~ .gallery > section:nth-child(6),
 input[value = "2"]:checked ~ .gallery > section:nth-child(7) {
     display: inline-block;
+    animation: move .3s linear;
 }
 
 input[value = "3"]:checked ~ .gallery > section:nth-child(7),
@@ -132,6 +132,7 @@ input[value = "3"]:checked ~ .gallery > section:nth-child(8),
 input[value = "3"]:checked ~ .gallery > section:nth-child(9),
 input[value = "3"]:checked ~ .gallery > section:nth-child(10) {
     display: inline-block;
+    animation: move .3s linear;
 }
 
 input[value = "4"]:checked ~ .gallery > section:nth-child(10),
@@ -139,6 +140,7 @@ input[value = "4"]:checked ~ .gallery > section:nth-child(11),
 input[value = "4"]:checked ~ .gallery > section:nth-child(12),
 input[value = "4"]:checked ~ .gallery > section:nth-child(13) {
     display: inline-block;
+    animation: move .3s linear;
 }
 
 input[value = "5"]:checked ~ .gallery > section:nth-child(13),
@@ -146,4 +148,15 @@ input[value = "5"]:checked ~ .gallery > section:nth-child(14),
 input[value = "5"]:checked ~ .gallery > section:nth-child(15),
 input[value = "5"]:checked ~ .gallery > section:nth-child(16) {
     display: inline-block;
+    animation: move .3s linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(105%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
