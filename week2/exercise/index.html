@@ -9,10 +9,12 @@
 </head>
 <body>
     <header></header>
-    <main class="container">
+    <main>
         <article class="gallery">
             <section class="card">
-                <img class="image" src="images/marrow-squash.jpg" alt="кабачок">
+                <a class="click-img" href="#marrow-squash">
+                    <img class="image" src="images/marrow-squash.jpg" alt="кабачок">
+                </a>
                 <div class="info">
                     <p>
                         Кабачок — кустовая разновидность тыквы обыкновенной с продолговатыми плодами, без плетей. 
@@ -22,7 +24,9 @@
                 </div>
             </section>
             <section class="card">
-                <img class="image" src="images/carrot.jpg" alt="морковь">
+                <a class="click-img" href="#carrot">
+                    <img class="image" src="images/carrot.jpg" alt="морковь">
+                </a>
                 <div class="info">
                     <p>
                         Морковь посевная — двулетнее растение, овощная культура, подвид вида морковь дикая. 
@@ -32,7 +36,9 @@
                 </div>
             </section>
             <section class="card">
-                <img class="image" src="images/eggplant.jpg" alt="баклажан">
+                <a class="click-img" href="#eggplant">
+                    <img class="image" src="images/eggplant.jpg" alt="баклажан">
+                </a>
                 <div class="info">
                     <p>
                         Баклажа́н, или Паслён тёмнопло́дный — вид многолетних травянистых растений рода Паслён. 
@@ -43,7 +49,9 @@
                 </div>
             </section>
             <section class="card">    
-                <img class="image" src="images/pumpkin.jpg" alt="тыква">
+                <a class="click-img" href="#pumpkin">
+                    <img class="image" src="images/pumpkin.jpg" alt="тыква">
+                </a>
                 <div class="info">
                     <p>
                         Ты́ква — род травянистых растений семейства Тыквенные. Под словом «тыква» в России 
@@ -51,6 +59,24 @@
                         широко распространённые и культивируемые как пищевое и кормовое растение.
                     </p>
                 </div>
+            </section>
+        </article>
+        <article>
+            <section class="modal-window" id="marrow-squash">
+                <img src="images/marrow-squash.jpg" alt="кабачок">
+                <a href="" class="exit"></a>
+            </section>
+            <section class="modal-window" id="carrot">
+                <img src="images/carrot.jpg" alt="морковь">
+                <a href="" class="exit"></a>
+            </section>
+            <section class="modal-window" id="eggplant">
+                <img src="images/eggplant.jpg" alt="баклажан">
+                <a href="" class="exit"></a>
+            </section>
+            <section class="modal-window" id="pumpkin">
+                <img src="images/pumpkin.jpg" alt="тыква">
+                <a href="" class="exit"></a>
             </section>
         </article>
     </main>
