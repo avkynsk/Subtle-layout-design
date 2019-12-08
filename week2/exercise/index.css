@@ -6,65 +6,38 @@ body {
     padding: 0;
 }
 
-.container {
-    display: block;
-    position: relative;
-
-    height: 400px;
-    width:  100%;
-    margin: 200px auto;
-}
-
 .gallery {
     display: block;
-    position: relative;
-
-    margin: auto;
+    margin: 200px auto;
     width: 80%;
-    height: auto;
+    height: 200px;
 }
 
 .card {
     display: inline-block;
-    position: relative;
-
+    vertical-align: top;
+    padding: 5px;
+    height: auto;
     width: 20%;
-
     text-align: center;
-
-    transition-duration: .1s;
-    transform-origin: 50%;
-}
-
-img {
-    vertical-align: middle;
 }
 
 .image {
-    position: relative;
-
+    height: 200px;
     max-width: 100%;
-    max-height: 200px;
+    object-fit: cover;
 }
 
 .info {
     display: none;
-    font-size: 0.6em;
     text-align: left;
 }
 
 .card:hover {
-    transform: scale(1.5);
-    z-index: 1;
-    height: auto;
-    background-color: white;
-    box-shadow: 0 0 10px lightslategray;
-    padding: 10px;
-    
+    box-shadow: 0 0 10px rgb(170, 170, 170);
 }
-
 
 .card:hover > .info {
-    display: inline-block;
-    position: relative;
+    display: inline;
 }
+
