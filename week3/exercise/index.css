@@ -4,7 +4,8 @@ body {
     padding: 0;
 
     height: 100%;
-    width: 100%;
+    max-width: 1920px;
+    min-width: 800px;
 
     background-color: rgb(230, 230, 230);
 }
@@ -225,10 +226,6 @@ input#siam:checked ~ .cats > .cats-eight > div > img#siam {
     margin: 0;
 }
 
-.rating label {
-    margin-left: 20%;
-}
-
 .rating p {
     margin: 1.5ch 1ch .5ch 0;
     font: 110% Arial, sans-serif;
@@ -274,18 +271,9 @@ input#siam:checked ~ .cats > .cats-eight > div > img#siam {
     background: linear-gradient(90deg, rgb(223, 55, 55), rgb(255, 255, 255));
 }
 
-input#type-rating:checked ~ div:nth-child(4) {
-    order: 2;
-}
-
-input#type-rating:checked ~ div:nth-child(5) {
-    order: 3;
-}
-
-input#type-rating:checked ~ div:nth-child(6) {
-    order: 1;
-}
-
+input#type-rating:checked ~ div:nth-child(4),
+input#type-rating:checked ~ div:nth-child(5),
+input#type-rating:checked ~ div:nth-child(6),
 input#type-rating:checked ~ div:nth-child(7) {
-    order: 4;
+    order: var(--default);
 }
