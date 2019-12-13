@@ -1,0 +1,25 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    max-width: 1920px;
+    min-width: 440px;
+    height: 1650px;
+}
+
+.wrapper {
+    flex-grow: 2;
+    display: flex;
+
+    margin: 18px;
+    max-width: 984px;
+    height: inherit;
+    background: #f6f5f3;
+}
