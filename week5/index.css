@@ -11,15 +11,21 @@ body {
 
     max-width: 1920px;
     min-width: 440px;
-    height: 1650px;
+    max-height: 1650px;
 }
 
 .wrapper {
     flex-grow: 2;
     display: flex;
+    flex-direction: column;
 
     margin: 18px;
     max-width: 984px;
-    height: inherit;
+    height: calc(1650px - 36px);
     background: #f6f5f3;
+}
+
+header img {
+    float: right;
+    margin-right: 74px;
 }
