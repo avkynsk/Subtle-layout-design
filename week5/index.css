@@ -10,17 +10,15 @@ body {
     padding: 0;
 
     max-width: 1920px;
-    min-width: 750px;
-    
+    min-width: 1020px;   
 }
 
 .wrapper {
-    flex-grow: 2;
     display: flex;
     flex-direction: column;
 
     margin: 18px;
-    max-width: 984px;
+    width: 984px;
     height: auto;
     background: #f6f5f3;
 }
