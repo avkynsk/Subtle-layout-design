@@ -11,7 +11,7 @@ body {
 
     max-width: 1920px;
     min-width: 750px;
-    max-height: 1650px;
+    
 }
 
 .wrapper {
@@ -21,7 +21,7 @@ body {
 
     margin: 18px;
     max-width: 984px;
-    height: calc(1650px - 36px);
+    height: auto;
     background: #f6f5f3;
 }
 
@@ -201,4 +201,46 @@ main {
 
 .search-field {
     padding-left: 20px !important; 
+}
+
+.search-field img {
+    padding-top: 5px !important;
+}
+
+.box-try {
+    flex-grow: 1;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-try h1 {
+    margin: 0 0 0 2ch;
+    padding: 0;
+
+    font: 42px Arial, sans-serif;
+}
+
+.box-try button {
+    margin-top: 65px;
+    margin-bottom: 70px;
+
+    height: 70px;
+    width: 317px;
+
+    border: none;
+    outline: none;
+
+    background: linear-gradient(#ffe349, #ffdb01);
+    border-radius: 10px;
+    font: 36px Arial, sans-serif;
+    color: #473e08;
+}
+
+.box-try button:hover {
+    background: linear-gradient(#ffe86b, #ffe12f);
+    text-shadow: 1px 1px 0 #ffee8d;
 }
